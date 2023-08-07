@@ -3,6 +3,8 @@ import './Main.css'
 
 // icones do formulário
 import {FaPlus} from 'react-icons/fa'
+import {FaEdit} from 'react-icons/fa'
+import {FaWindowClose} from 'react-icons/fa'
 
 export default class Main extends Component{ //Component é o nome de uma classe herança, que já vem 
 
@@ -34,6 +36,10 @@ export default class Main extends Component{ //Component é o nome de uma classe
                     {tarefas.map(tarefa =>{
                        return <li key={tarefa}>
                             {tarefa}
+                            <div>
+                                <FaEdit className="edit"/>
+                                <FaWindowClose className="close" />
+                            </div>
                         </li>
                     })}
                 </ul>

@@ -44,8 +44,35 @@ body {
     cursor: pointer;
 }
 
-.listaTarefas{
+.listaTarefas {
     color:#3f220e;
     font-weight: bold;
     font-family: Cambria;
+}
+
+.listaTarefas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listaTarefas li .edit {
+    margin-right: 15px;
+    color:#7d9666 ;
+}
+
+.listaTarefas li .close {
+    margin-right: 15px;
+    color: #a8333d;
+}
+
+.listaTarefas li:hover {
+    background-color: #dfb293;
+    cursor: pointer;
+    color:#3f220e;
+}
+
+.listaTarefas li:hover .edit,
+.listaTarefas li:hover .close{
+    color: #3f220e;
 }
